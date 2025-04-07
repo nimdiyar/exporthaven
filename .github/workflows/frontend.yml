@@ -20,7 +20,7 @@ jobs:
         run: npm install
         working-directory: ./frontend
 
-      - name: Build the project (skip CI=true)
+      - name: Build the project
         run: CI='' npm run build
         working-directory: ./frontend
 

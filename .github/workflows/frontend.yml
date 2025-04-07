@@ -32,3 +32,4 @@ jobs:
         working-directory: ./frontend
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+

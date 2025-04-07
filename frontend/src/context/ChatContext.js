@@ -8,7 +8,7 @@ export const ChatProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io("http://localhost:5000", {
+    const newSocket = io("http://135.13.11.182:5000", {
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
     });

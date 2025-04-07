@@ -17,7 +17,7 @@ const useFetchAds = (type) => {
 
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/ads?type=${type}`
+        `http://135.13.11.182:5000/api/ads?type=${type}`
       );
       setAds(data);
     } catch (error) {

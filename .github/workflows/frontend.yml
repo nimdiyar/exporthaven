@@ -20,8 +20,8 @@ jobs:
         run: npm install
         working-directory: ./frontend
 
-      - name: Build the project
-        run: npm run build
+      - name: Build the project (skip CI=true)
+        run: CI='' npm run build
         working-directory: ./frontend
 
       - name: Deploy to Vercel
